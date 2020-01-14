@@ -13,6 +13,12 @@ The Custom URL Category requires APM or SSLO to be licensed. This category can b
 
 Examples of each Data-Group and Custom URL Category is below.
 
+## Usage
+
+Copy the Python script `o365_ip_url_automation.py` to `shared/scripts/` directory on the BIG-IP. Create the `/shared/scripts/` directory if it does not exist.
+
+Update the 
+
 ### External Data-group with URLs:
  
 ![o365_url_dg](https://github.com/brett-at-f5/f5-office365-ip-url-automation/blob/master/o365_url_dg.png)
