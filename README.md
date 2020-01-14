@@ -17,7 +17,9 @@ Examples of each Data-Group and Custom URL Category is below.
 
 Copy the Python script `o365_ip_url_automation.py` to `shared/scripts/` directory on the BIG-IP. Create the `/shared/scripts/` directory if it does not exist.
 
-Update the 
+Update the permissions so the script is executable. `chmod u+x o365_ip_url_automation.py`
+
+
 
 ### External Data-group with URLs:
  
