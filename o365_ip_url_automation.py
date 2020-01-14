@@ -42,7 +42,7 @@ import sys
 use_url = 0     # Create custom category for URL based proxy bypassing - requires APM: 0=do not use, 1=use
 use_url_dg = 1  # Create data group for URL based proxy bypassing: 0=do not use, 1=use
 use_ipv4 = 1    # Create data group for IPv4 based routing: 0=do not use, 1=use
-use_ipv6 = 1    # Create data group for IPv6 based routing: 0=do not use, 1=use
+use_ipv6 = 0    # Create data group for IPv6 based routing: 0=do not use, 1=use
 
 # O365 "SeviceArea" (application) to consume
 care_common = 1     # "Common": 0=do not care, 1=care
