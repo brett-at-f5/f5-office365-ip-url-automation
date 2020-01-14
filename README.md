@@ -19,7 +19,8 @@ Copy the Python script `o365_ip_url_automation.py` to `shared/scripts/` director
 
 Update the permissions so the script is executable. `chmod u+x o365_ip_url_automation.py`
 
-Edit the script and change the configurable options to suit your setup. 
+Edit the script and change the configurable options to suit your setup. Note: `ha_config = 1` option will cause a configuration sync to the device group in a Device Service Cluster (DSC). This may not be desirable, so use with caution.
+
 
 ## Usage
 
@@ -29,6 +30,7 @@ Add a cron entry to run once a day or as desired.
 
 `0 3 * * * /bin/python /shared/scripts/o365_ip_url_automation.py >/dev/null 2>&1`
 
+## Screenshots
 ### External Data-group with URLs:
  
 ![o365_url_dg](https://github.com/brett-at-f5/f5-office365-ip-url-automation/blob/master/o365_url_dg.png)
