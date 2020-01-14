@@ -1,15 +1,15 @@
 #!/bin/python
 # -*- coding: utf-8 -*-
-# O365 url/ip update automation for BIG-IP
+# Office 365 IP Address and URL Web Service Automation for BIG-IP
+# https://docs.microsoft.com/en-us/Office365/Enterprise/office-365-ip-web-service
 # Version: 1.06
-# Last Modified: 4 December 2019
+# Last Modified: 4th December 2019
 # Original author: Makoto Omura, F5 Networks Japan G.K.
 #
 # v1.05: Updated for SSL Orchestrator by Kevin Stewart, SSA, F5 Networks
 # v1.06: Updated by Brett Smith, Principal Systems Engineer
 # v1.06: Ability to create data groups and/or URL categories. IPv4/IPv6 data group support only.
 #
-# 
 # This Sample Software provided by the author is for illustrative
 # purposes only which provides customers with programming information
 # regarding the products. This software is supplied "AS IS" without any
@@ -59,7 +59,7 @@ device_group_name = "device-group1"     # Name of Sync-Failover Device Group.  R
 ha_config = 0                           # 0=stand alone, 1=HA paired
 
 # Log configuration
-log_level = 2   # 0=none, 1=normal, 2=verbose
+log_level = 1   # 0=none, 1=normal, 2=verbose
 
 # Microsoft Web Service URIs (enable only one webservice version)
 uri_ms_o365_endpoints = "/endpoints/Worldwide?ClientRequestId="
