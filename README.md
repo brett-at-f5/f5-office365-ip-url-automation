@@ -15,16 +15,16 @@ Examples of each Data-Group and Custom URL Category is below.
 
 ## Installation
 
-Copy the Python script `o365_ip_url_automation.py` to `shared/scripts/` directory on the BIG-IP. Create the `/shared/scripts/` directory if it does not exist.
+Copy the Python script `o365_ip_url_automation.py` to `/shared/scripts/` directory on the BIG-IP. Create the `/shared/scripts/` directory if it does not exist.
 
 Update the permissions so the script is executable. `chmod u+x o365_ip_url_automation.py`
 
-Edit the script and change the configurable options to suit your setup. Note: `ha_config = 1` option will cause a configuration sync to the device group in a Device Service Cluster (DSC). This may not be desirable, so use with caution.
+Edit the script and change the configurable options to suit your setup. Note: `ha_config = 1` option will cause a configuration sync to the device group in a Device Service Cluster (DSC). This may not be desirable, use with caution.
 
 
 ## Usage
 
-Run the script for the first time and verify it is working correctly by monitoring the log file `/var/log/o365_update`. You may need to change the log level.
+Run the script for the first time and verify it's working correctly by monitoring the log file `/var/log/o365_update`. You may need to change the log level.
 
 Add a cron entry to run once a day or as desired.
 
