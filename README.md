@@ -1,4 +1,4 @@
-# Office 365 IP Address and URL Web Service Automation for BIG-IP
+# Office 365 IP and URL Web Service Automation for BIG-IP
 
 ## Synopsis
 
