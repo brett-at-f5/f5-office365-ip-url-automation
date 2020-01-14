@@ -49,6 +49,6 @@ Add a cron entry to run once a day or as desired.
 
 
 ## Contributors
-### Original author: Makoto Omura, F5 Networks Japan
+### Original Author: Makoto Omura, F5 Networks Japan
 ### Updated for SSL Orchestrator by Kevin Stewart, SSA, F5 Networks
 ### Updated by Brett Smith, Principal Systems Engineer, F5 Networks Australia
