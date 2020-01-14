@@ -9,7 +9,7 @@ Up to three Data-Groups are created, based on the configurable options. A Data-G
 - IPv6 Addresses
 - URL/FQDN
 
-The Custom URL Category requires APM or SSLO to be licensed. This category can be referenced within the APM/SWG Per-Request Policy or iRule and SSLO Security Policy.
+The Custom URL Category requires APM or SSLO to be licensed. This category can be referenced within the APM/SWG Per-Request Policy and SSLO Security Policy (or iRule).
 
 Examples of each Data-Group and Custom URL Category is below.
 
