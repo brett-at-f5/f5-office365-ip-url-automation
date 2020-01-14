@@ -29,7 +29,6 @@ when CLIENT_ACCEPTED {
 }
  
 when HTTP_PROXY_REQUEST {
-
   call o365_log "[HTTP::method] [HTTP::host] [HTTP::uri] HTTP/[HTTP::version] [HTTP::header User-Agent]"
 
   # Strip of the port number
@@ -38,15 +37,15 @@ when HTTP_PROXY_REQUEST {
   # If the hostname matches a 0ffice 365 domain, enable the forward proxy on the HTTP profile and bypass the explicit proxy pool members.
   if { [class match $host ends_with $static::o365_url_dg] } {
     call o365_log "Data group match. Bypass."
+    
     # Use a SNAT pool?
     if { $static::o365_snat } {
       snatpool $static::o365_snat_pool
     }
-
+    
     # Use default route and forward proxy the connection.
     HTTP::proxy enable
   } else {
-
     # Reverse proxy/load balance the request unmodified to the default explicit proxy pool members.
     HTTP::proxy disable
   }
